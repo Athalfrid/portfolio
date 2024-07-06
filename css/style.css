@@ -1,0 +1,169 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #4e4e4e; /* Fond gris foncé */
+  background-image: url("../img/background/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 160px; /* Ajustement pour la navbar fixée */
+  margin: 0;
+}
+
+.btnCV {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCV a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #007bff;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btnCV a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+.navbar-brand img {
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  color: black;
+}
+
+.navbar-brand,
+ul li a {
+  font-size: 22px;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px; /* Réduction de la marge */
+  color: #00ff00; /* Couleur du texte vert */
+}
+
+.skill-description {
+  font-size: 18px; /* Augmentation de la taille du texte */
+  line-height: 1.6;
+  color: #ffffff; /* Couleur du texte blanc */
+}
+
+.skills-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon {
+  width: 90px; /* Taille des icônes */
+  height: auto;
+}
+
+.main-container {
+  padding: 20px; /* Espacement autour du contenu principal */
+}
+
+.container {
+  padding-top: 20px; /* Ajouter un padding-top pour l'espace autour du contenu */
+}
+
+.skills-section {
+  background-color: #5f5f5f; /* Fond gris foncé */
+  padding: 40px; /* Ajustement de l'espacement */
+  border: 2px solid #00ff00; /* Bordure verte */
+  border-radius: 5px; /* Coins arrondis */
+  color: #ffffff; /* Couleur du texte blanc */
+}
+
+.skills-section h2 {
+  text-align: center;
+}
+
+.skills-section .col-lg-4 {
+  margin-bottom: 30px; /* Ajustement de l'espacement entre les colonnes */
+}
+
+.skills-section .skill-description {
+  height: 120px; /* Ajustement de la hauteur de la description */
+  overflow: auto; /* Activation du défilement si nécessaire */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #5f5f5f; /* Couleur de fond gris foncé */
+  padding: 20px; /* Ajustement de l'espacement */
+  border: 2px solid #00ff00; /* Bordure verte */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #00ff00; /* Couleur du texte vert */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px; /* Ajustement de l'espacement */
+  margin-bottom: 10px;
+  border: 1px solid #00ff00; /* Bordure verte */
+  background-color: #333333; /* Couleur de fond gris foncé */
+  color: #ffffff; /* Couleur du texte blanc */
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  padding: 10px; /* Ajustement de l'espacement */
+  border: none;
+  background-color: #00ff00; /* Couleur de fond verte */
+  color: #000000; /* Couleur du texte noir */
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+form button:hover {
+  background-color: #00cc00; /* Couleur de fond verte au survol */
+}
+.footer {
+    background-color: #1a1a1a; /* Couleur de fond gris foncé */
+    color: #ffffff; /* Couleur du texte blanc */
+    padding: 20px 0; /* Ajustement de l'espacement */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
