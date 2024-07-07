@@ -12,19 +12,56 @@
   margin-bottom: 20px;
   padding: 20px;
   background-color: #b3b1b1;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+/* Styles pour les écrans de bureau */
+@media (min-width: 769px) {
+  .project-card {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0; /* Ajuster la marge si nécessaire */
+  }
+
+  .project-header {
+    flex-direction: column; /* Faire en sorte que le titre et le toggle soient en colonne */
+    align-items: flex-start; /* Aligner les éléments au début */
+  }
+
+  .project-title, .project-toggle {
+    width: 100%; /* Faire en sorte que le titre et le toggle prennent toute la largeur */
+  }
+
+  .project-title {
+    margin-bottom: 10px; /* Ajouter une marge en bas pour séparer le titre du toggle */
+  }
+
+  .project-toggle {
+    text-align: right; /* Aligner le toggle à droite */
+  }
 }
 
 .project-header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
   align-items: center;
 }
 
 .project-title {
   font-size: 1.5rem;
   margin: 0;
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .project-toggle {

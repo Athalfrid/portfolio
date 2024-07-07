@@ -11,4 +11,5 @@
 
 .mb-3 p {
   font-size: 16px;
+  hyphens: auto;
 }
