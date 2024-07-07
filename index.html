@@ -49,8 +49,8 @@
           </p>
           <p>
             <strong>Quelles technologies je maîtrise ?</strong>
-            HTML, CSS, JavaScript, JQuery, ReactJS, ExpressJS, DiscordJS, PHP,
-            Symfony, API Platform, MySQL et MongoDB.
+            HTML, CSS, JavaScript, JQuery, ReactJS, ReactExpo, ExpressJS,
+            DiscordJS, PHP, Symfony, API Platform, MySQL et MongoDB.
           </p>
           <p>
             <strong>Qu'ai-je récemment obtenu ?</strong>
@@ -84,7 +84,6 @@
           <div class="btnCV">
             <a href="#">Mon CV</a>
           </div>
-
         </section>
 
         <section id="skills" class="skills-section">
@@ -144,6 +143,20 @@
                 <p class="skill-description">
                   Découverte de ReactJS pour la création d'interfaces
                   utilisateur modernes et réactives.
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
+                <span class="icon-container">
+                  <img
+                    src="img/logo/logoEXPO.png"
+                    alt="Logo ReactJS"
+                    class="skill-icon"
+                  />
+                </span>
+                <p class="skill-description">
+                  Découverte du framework EXPO pour la création d'application
+                  mobile React Native cross-platform.
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
@@ -214,12 +227,12 @@
             </div>
           </div>
         </section>
-        
 
-        <section id="projects" class="py-4">
-          <h2>Projets</h2>
-          <!-- Liste de vos projets -->
-           <p>À venir</p>
+        <section id="projects" class="projects-section">
+          <div class="container">
+            <h2 class="section-heading text-uppercase text-center">Projets</h2>
+            <div id="projects-container" class="row justify-content-center"></div>
+          </div>
         </section>
 
         <section id="contact" class="py-4">
@@ -299,11 +312,14 @@
     </footer>
 
     <!-- Scripts Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Scripts JavaScript-->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <script src="js/sendMessage.js"></script>
+    <script src="js/loadProjects.js"></script>
+    "
   </body>
 </html>

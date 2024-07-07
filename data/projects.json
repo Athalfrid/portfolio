@@ -1,0 +1,32 @@
+[
+    {
+        "title": "API Hunt Showdown",
+        "description": "Il s'agit d'une API développée avec ExpressJS avec la base de donnée NoSql MONGODB. Elle permet la création, la modification ou la suppression de données des principaux équipement du jeu Hunt Showdown (développé par Crytek). Il y a aussi un système d'inscription/login.",
+        "images": ["img/projet1/image1.jpg", "img/projet1/image2.jpg"],
+        "github": "https://github.com/utilisateur/projet1"
+    },
+    {
+        "title": "Projet 2",
+        "description": "Ceci est une courte description du projet 2.",
+        "images": ["img/projet2/image1.jpg", "img/projet2/image2.jpg"],
+        "github": "https://github.com/utilisateur/projet2"
+    },
+    {
+        "title": "Projet 2",
+        "description": "Ceci est une courte description du projet 2.",
+        "images": ["img/projet2/image1.jpg", "img/projet2/image2.jpg"],
+        "github": "https://github.com/utilisateur/projet2"
+    },
+    {
+        "title": "Projet 2",
+        "description": "Ceci est une courte description du projet 2.",
+        "images": ["img/projet2/image1.jpg", "img/projet2/image2.jpg"],
+        "github": "https://github.com/utilisateur/projet2"
+    },
+    {
+        "title": "Projet 2",
+        "description": "Ceci est une courte description du projet 2.",
+        "images": ["img/projet2/image1.jpg", "img/projet2/image2.jpg"],
+        "github": "https://github.com/utilisateur/projet2"
+    }
+]

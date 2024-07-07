@@ -11,26 +11,25 @@ body {
 }
 
 .btnCV {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btnCV a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    padding: 10px 20px;
-    background-color: #007bff;
-    text-align: center;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  padding: 10px 20px;
+  background-color: #007bff;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .btnCV a:hover {
-    background-color: #0056b3;
-    color: white;
+  background-color: #0056b3;
+  color: white;
 }
-
 
 .navbar-brand img {
   border-radius: 50%;
@@ -57,42 +56,42 @@ ul li a {
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px; /* Réduction de la marge */
-  color: #00ff00; /* Couleur du texte vert */
+  margin-bottom: 20px;
+  color: #00ff00;
 }
 
 .skill-description {
-  font-size: 18px; /* Augmentation de la taille du texte */
+  font-size: 18px;
   line-height: 1.6;
-  color: #ffffff; /* Couleur du texte blanc */
+  color: #ffffff;
 }
 
-.skills-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-icon {
-  width: 90px; /* Taille des icônes */
+  width: 90px;
   height: auto;
 }
 
 .main-container {
-  padding: 20px; /* Espacement autour du contenu principal */
+  padding: 20px;
 }
 
 .container {
-  padding-top: 20px; /* Ajouter un padding-top pour l'espace autour du contenu */
+  padding-top: 20px;
 }
 
 .skills-section {
-  background-color: #5f5f5f; /* Fond gris foncé */
-  padding: 40px; /* Ajustement de l'espacement */
-  border: 2px solid #00ff00; /* Bordure verte */
-  border-radius: 5px; /* Coins arrondis */
-  color: #ffffff; /* Couleur du texte blanc */
+  background-color: #5f5f5f;
+  padding: 40px;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 .skills-section h2 {
@@ -100,12 +99,12 @@ ul li a {
 }
 
 .skills-section .col-lg-4 {
-  margin-bottom: 30px; /* Ajustement de l'espacement entre les colonnes */
+  margin-bottom: 30px;
 }
 
 .skills-section .skill-description {
-  height: 120px; /* Ajustement de la hauteur de la description */
-  overflow: auto; /* Activation du défilement si nécessaire */
+  height: 120px;
+  overflow: auto;
 }
 
 .form-group {
@@ -113,26 +112,26 @@ ul li a {
 }
 
 form {
-  background-color: #5f5f5f; /* Couleur de fond gris foncé */
-  padding: 20px; /* Ajustement de l'espacement */
-  border: 2px solid #00ff00; /* Bordure verte */
-  border-radius: 5px; /* Coins arrondis */
+  background-color: #5f5f5f;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
 }
 
 form label {
   display: block;
   margin-bottom: 10px;
-  color: #00ff00; /* Couleur du texte vert */
+  color: #00ff00;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 10px; /* Ajustement de l'espacement */
+  padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #00ff00; /* Bordure verte */
-  background-color: #333333; /* Couleur de fond gris foncé */
-  color: #ffffff; /* Couleur du texte blanc */
+  border: 1px solid #00ff00; 
+  background-color: #333333; 
+  color: #ffffff; 
   font-family: "Courier New", Courier, monospace;
   outline: none;
 }
@@ -143,27 +142,82 @@ form textarea {
 
 form button {
   width: 100%;
-  padding: 10px; /* Ajustement de l'espacement */
+  padding: 10px;
   border: none;
-  background-color: #00ff00; /* Couleur de fond verte */
-  color: #000000; /* Couleur du texte noir */
+  background-color: #00ff00;
+  color: #000000;
   font-family: "Courier New", Courier, monospace;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Transition fluide */
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #00cc00; /* Couleur de fond verte au survol */
+  background-color: #00cc00;
 }
 .footer {
-    background-color: #1a1a1a; /* Couleur de fond gris foncé */
-    color: #ffffff; /* Couleur du texte blanc */
-    padding: 20px 0; /* Ajustement de l'espacement */
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+.projects-section {
+  padding: 60px 0;
+  background-color: transparent;
+  color: black;
+}
+
+.project {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project-images {
+  position: relative;
+  height: 200px;
+}
+
+.project-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.project-navigation button {
+  background-color: #00cc00;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.project-navigation button:hover {
+  background-color: #009900;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00cc00;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
