@@ -8,23 +8,34 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/btnCV.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#top">
         <img src="img/ma_photo/ma_photo.png" alt="Votre photo" />
-        <span>Aurélien ROBIN - Développeur Full Stack</span>
+        <span class="d-block d-lg-none mt-2"
+          >Aurélien ROBIN<br />Développeur Full Stack</span
+        >
+        <span class="d-none d-lg-block"
+          >Aurélien Robin - Développeur Full Stack</span
+        >
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <!-- Le lien Contact sera caché sur mobile -->
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
-      <div id="#top" hidden></div>
     </nav>
 
     <!-- Main Content -->
@@ -33,198 +44,86 @@
         <section class="py-4">
           <h2 class="text-center pb-4 text-uppercase">À propos de moi</h2>
 
-          <p>
-            <strong>Qui suis-je ?</strong> Un passionné en reconversion pour
-            devenir Développeur Full Stack.
-          </p>
-          <p>
-            <strong>Quelles technologies je maîtrise ?</strong>
-            HTML, CSS, JavaScript, JQuery, ReactJS, ReactExpo, ExpressJS,
-            DiscordJS, PHP, Symfony, API Platform, MySQL et MongoDB.
-          </p>
-          <p>
-            <strong>Qu'ai-je récemment obtenu ?</strong>
-            Un diplôme en Développement Web & Web Mobile.
-          </p>
-          <p>
-            <strong>De quoi suis-je fier ?</strong>
-            Ma polyvalence, mon autonomie et ma capacité à travailler en équipe.
-          </p>
-          <p>
-            <strong>Que recherche-je maintenant ?</strong>
-            Une entreprise pour une alternance, avec l'objectif d'évoluer vers
-            un CDI.
-          </p>
+          <div class="about-section">
+            <div class="mb-4">
+              <strong>Qui suis-je ?</strong>
+              <p>
+                Un passionné en reconversion pour devenir Développeur Full
+                Stack.
+              </p>
+            </div>
 
-          <p>
-            Je m'appelle Aurélien ROBIN et je suis actuellement en reconversion
-            professionnelle pour devenir développeur full stack. Passionné par
-            les technologies web, je maîtrise plusieurs langages et frameworks
-            tels que HTML, CSS, JavaScript, JQuery, ReactJS, ExpressJS,
-            DiscordJS, PHP, Symfony, API Platform, MySQL et MongoDB.
-          </p>
-          <p>
-            Ayant récemment obtenu mon diplôme de Développeur Web & Web Mobile,
-            je suis fier de ma polyvalence, de mon autonomie et de ma capacité à
-            travailler en équipe. Mon organisation me permet de gérer
-            efficacement mes projets, et je suis maintenant à la recherche d'une
-            entreprise prête à m'accueillir pour une alternance, avec l'espoir
-            de transformer cette expérience en un CDI.
-          </p>
-          <div class="btnCV">
-            <a href="#">Mon CV</a>
+            <div class="mb-4">
+              <strong>Quelles technologies je maîtrise ?</strong>
+              <p>
+                HTML, CSS, JavaScript, JQuery, ReactJS, ReactExpo, ExpressJS,
+                DiscordJS, PHP, Symfony, API Platform, MySQL et MongoDB.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <strong>Qu'ai-je récemment obtenu ?</strong>
+              <p>Un diplôme en Développement Web & Web Mobile avec l'ENI.</p>
+            </div>
+
+            <div class="mb-4">
+              <strong>De quoi suis-je fier ?</strong>
+              <p>
+                Ma polyvalence, mon autonomie et ma capacité à travailler en
+                équipe.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <strong>Que recherche-je maintenant ?</strong>
+              <p>
+                Une entreprise pour une alternance, avec l'objectif d'évoluer
+                vers un CDI.
+              </p>
+            </div>
+            <div class="mb-3">
+              <p>
+                <strong>Bonjour</strong>, je m'appelle Aurélien ROBIN et je suis actuellement en
+                reconversion professionnelle pour devenir développeur full
+                stack. Passionné par les technologies web, je maîtrise plusieurs
+                langages et frameworks tels que HTML, CSS, JavaScript, JQuery,
+                ReactJS, ExpressJS, DiscordJS, PHP, Symfony, API Platform, MySQL
+                et MongoDB.
+              </p>
+              <p>
+                <!--TODO:Modifier cette partie-->
+                Ayant récemment obtenu mon diplôme de Développeur Web & Web
+                Mobile, je suis fier de ma polyvalence, de mon autonomie et de
+                ma capacité à travailler en équipe. Mon organisation me permet
+                de gérer efficacement mes projets, et je suis maintenant à la
+                recherche d'une entreprise prête à m'accueillir pour une
+                alternance, avec l'espoir de transformer cette expérience en un
+                CDI.
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="btnCV">
+                <a href="./data/monCV/CV_Aurélien_Robin.pdf">Mon CV</a>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="skills-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Compétences</h2>
-              </div>
+        <section id="skills" class="skills-section">
+          <div class="container" id="skills-container">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">SKILLS</h2>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoHTML.png"
-                    alt="Logo HTML"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Bases solides en HTML pour la structuration du contenu web.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoCSS.png"
-                    alt="Logo CSS"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Connaissance de base en CSS pour la mise en page et le design
-                  des sites web.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoJS.png"
-                    alt="Logo JavaScript"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Introduction à JavaScript pour la programmation interactive
-                  sur les pages web.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoREACTJS.png"
-                    alt="Logo ReactJS"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Découverte de ReactJS pour la création d'interfaces
-                  utilisateur modernes et réactives.
-                </p>
-              </div>
-
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoEXPO.png"
-                    alt="Logo ReactJS"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Découverte du framework EXPO pour la création d'application
-                  mobile React Native cross-platform.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoEXPRESSJS.png"
-                    alt="Logo Express.js"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Premiers pas avec ExpressJS pour le développement backend de
-                  petites applications web.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoPHP.png"
-                    alt="Logo PHP"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Introduction à PHP pour le développement côté serveur et la
-                  création de sites dynamiques.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoSYMFONY.png"
-                    alt="Logo Symfony"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Premiers pas avec Symfony pour la création d'applications web
-                  robustes et évolutives.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoMYSQL.png"
-                    alt="Logo MySQL"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Connaissance de base en MySQL pour la gestion de bases de
-                  données relationnelles.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-6 text-center mb-4 skills-item">
-                <span class="icon-container">
-                  <img
-                    src="img/logo/logoMONGODB.png"
-                    alt="Logo MongoDB"
-                    class="skill-icon"
-                  />
-                </span>
-                <p class="skill-description">
-                  Introduction à MongoDB pour la gestion de bases de données
-                  NoSQL.
-                </p>
-              </div>
-            </div>
+            <!-- Les compétences seront ajoutées ici par JavaScript -->
           </div>
         </section>
 
         <section id="projects" class="projects-section">
-          <div class="container">
-            <h2 class="section-heading text-uppercase text-center">Projets</h2>
-            <div
-              id="projects-container"
-              class="row justify-content-center"
-            ></div>
+          <h2 class="section-heading text-uppercase text-center">Projets</h2>
+          <!--TODO:Supprimer ce qui suit-->
+          <p class="text-center text-white"><i>En cours d'ajout</i></p>
+          <div class="container" id="projects-container">
+            <!-- Les projets sont ajoutés ici par JavaScript -->
           </div>
         </section>
 
@@ -327,6 +226,8 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script src="js/sendMessage.js"></script>
+    <script src="js/loadSkills.js"></script>
+    "
     <script src="js/loadProjects.js"></script>
     "
   </body>

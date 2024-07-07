@@ -1,0 +1,48 @@
+[
+    {
+      "title": "HTML",
+      "description": "Bases solides en HTML pour la structuration du contenu web.",
+      "icon": "img/logo/logoHTML.png"
+    },
+    {
+      "title": "CSS",
+      "description": "Connaissance de base en CSS pour la mise en page et le design des sites web.",
+      "icon": "img/logo/logoCSS.png"
+    },
+    {
+      "title": "JavaScript",
+      "description": "Introduction à JavaScript pour la programmation interactive sur les pages web.",
+      "icon": "img/logo/logoJS.png"
+    },
+    {
+      "title": "ReactJS",
+      "description": "Découverte de ReactJS pour la création d'interfaces utilisateur modernes et réactives.",
+      "icon": "img/logo/logoREACTJS.png"
+    },
+    {
+      "title": "ExpressJS",
+      "description": "Premiers pas avec ExpressJS pour le développement backend de petites applications web.",
+      "icon": "img/logo/logoEXPRESSJS.png"
+    },
+    {
+      "title": "PHP",
+      "description": "Introduction à PHP pour le développement côté serveur et la création de sites dynamiques.",
+      "icon": "img/logo/logoPHP.png"
+    },
+    {
+      "title": "Symfony",
+      "description": "Premiers pas avec Symfony pour la création d'applications web robustes et évolutives.",
+      "icon": "img/logo/logoSYMFONY.png"
+    },
+    {
+      "title": "MySQL",
+      "description": "Connaissance de base en MySQL pour la gestion de bases de données relationnelles.",
+      "icon": "img/logo/logoMYSQL.png"
+    },
+    {
+      "title": "MongoDB",
+      "description": "Introduction à MongoDB pour la gestion de bases de données NoSQL.",
+      "icon": "img/logo/logoMONGODB.png"
+    }
+  ]
+  

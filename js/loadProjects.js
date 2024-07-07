@@ -1,47 +1,56 @@
 $(document).ready(function () {
-  $.getJSON("https://athalfrid.github.io/portfolio/data/projects.json", function (projects) {
-    var projectsContainer = $("#projects-container");
+  const data = "data/projects.json"
+    ? "data/projects.json"
+    : "https://athalfrid.github.io/portfolio/data/projects.json";
+  $.getJSON(data, function (projects) {
+    var projectsContainer = $('#projects-container');
+    var projectHtml = '';
 
-    projects.forEach(function (project, index) {
-        console.log(project);
-      var projectHtml = `
-                <div class="col-lg-4 col-md-6 project">
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
+    projects.forEach(function(project, index) {
+        projectHtml += `
+            <div class="project-card" data-index="${index}">
+                <div class="project-header">
+                    <h3 class="project-title">${project.title}</h3>
+                    <span class="project-toggle">&#9660;</span>
+                </div>
+                <div class="project-details">
+                    <p class="project-description">${project.description}</p>
+                    <p class="project-technologies"><strong>Technologies utilisées:</strong> ${project.technologies.join(', ')}</p>
                     <div class="project-images">
-                        <img src="${project.images[0]}" alt="${project.title}${index}" class="project-image" data-index="0">
-                    </div>
-                    <div class="project-navigation">
-                        <button class="prev-image">Précédent</button>
-                        <button class="next-image">Suivant</button>
+                        <span class="image-navigation prev">&#9664;</span>
+                        <img src="${project.images[0]}" alt="Project Image" class="current-image">
+                        <span class="image-navigation next">&#9654;</span>
                     </div>
                     <a href="${project.github}" target="_blank">Voir sur GitHub</a>
                 </div>
-            `;
-
-      projectsContainer.append(projectHtml);
+            </div>
+        `;
     });
 
-    $(".next-image").click(function () {
-      var projectDiv = $(this).closest(".project");
-      var imgTag = projectDiv.find(".project-image");
-      var currentIndex = parseInt(imgTag.attr("data-index"));
-      var projectIndex = $(".project").index(projectDiv);
-      var nextIndex = (currentIndex + 1) % projects[projectIndex].images.length;
-      imgTag.attr("src", projects[projectIndex].images[nextIndex]);
-      imgTag.attr("data-index", nextIndex);
+    projectsContainer.append(projectHtml);
+
+    $('.project-card .project-header').on('click', function() {
+        var details = $(this).next('.project-details');
+        details.toggleClass('open');
+        details.slideToggle();
+
+        $(this).find('.project-toggle').toggleClass('open');
     });
 
-    $(".prev-image").click(function () {
-      var projectDiv = $(this).closest(".project");
-      var imgTag = projectDiv.find(".project-image");
-      var currentIndex = parseInt(imgTag.attr("data-index"));
-      var projectIndex = $(".project").index(projectDiv);
-      var prevIndex =
-        (currentIndex - 1 + projects[projectIndex].images.length) %
-        projects[projectIndex].images.length;
-      imgTag.attr("src", projects[projectIndex].images[prevIndex]);
-      imgTag.attr("data-index", prevIndex);
+    $('.image-navigation.prev').on('click', function() {
+        var currentImage = $(this).siblings('.current-image');
+        var currentIndex = projects[currentImage.closest('.project-card').data('index')].images.indexOf(currentImage.attr('src'));
+        var newIndex = (currentIndex - 1 + projects[currentImage.closest('.project-card').data('index')].images.length) % projects[currentImage.closest('.project-card').data('index')].images.length;
+        currentImage.attr('src', projects[currentImage.closest('.project-card').data('index')].images[newIndex]);
     });
-  });
+
+    $('.image-navigation.next').on('click', function() {
+        var currentImage = $(this).siblings('.current-image');
+        var currentIndex = projects[currentImage.closest('.project-card').data('index')].images.indexOf(currentImage.attr('src'));
+        var newIndex = (currentIndex + 1) % projects[currentImage.closest('.project-card').data('index')].images.length;
+        currentImage.attr('src', projects[currentImage.closest('.project-card').data('index')].images[newIndex]);
+    });
+}).fail(function(jqxhr, textStatus, error) {
+    console.error("Request Failed: " + textStatus + ", " + error);
+});
 });

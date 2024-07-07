@@ -1,0 +1,73 @@
+/*
+  border-radius: 50%;
+  width: auto; 
+  height: 150px;
+
+*/
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 150px; /* Taille de l'image réduite pour les mobiles */
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-brand .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-brand .name span {
+  text-align: center; /* Centrer le texte */
+}
+
+@media (max-width: 991.98px) { /* Media query pour les appareils jusqu'à la taille "lg" */
+  .navbar-brand img {
+    border-radius: 50%;
+    width: 60px; /* Taille de l'image encore réduite pour les tablettes */
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #333; /* Couleur de l'icône du menu hamburger */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Centrer les éléments de la navbar sur les mobiles */
+  }
+
+  .nav-item {
+    margin-bottom: 10px; /* Espacement entre les éléments de la navbar */
+  }
+
+  .nav-link {
+    color: #333; /* Couleur du texte des liens */
+    font-weight: bold;
+  }
+
+  .navbar-brand .name {
+    text-align: center; /* Centrer le nom/prénom et la profession */
+    margin-top: 5px; /* Espacement entre l'image et le texte */
+  }
+
+  .navbar-brand .name span {
+    font-size: 16px; /* Taille de la police pour le nom/prénom sur mobile */
+    margin-bottom: 5px; /* Espacement entre le nom/prénom et la profession */
+  }
+
+  .navbar-brand .name .d-block {
+    display: block; /* Afficher le nom/prénom sur mobile */
+  }
+
+  .navbar-brand .name .d-lg-inline-block {
+    display: none; /* Cacher le nom/prénom sur desktop */
+  }
+}
