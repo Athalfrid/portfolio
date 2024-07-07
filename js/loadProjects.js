@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.getJSON("../data/projects.json", function (projects) {
+  $.getJSON("/data/projects.json", function (projects) {
     var projectsContainer = $("#projects-container");
 
     projects.forEach(function (project, index) {
