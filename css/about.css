@@ -1,0 +1,14 @@
+.about-me-section {
+  padding: 40px;
+  background-color: #5f5f5f;
+  border: 1px solid #00ff00;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mb-4 strong {
+  font-size: 20px;
+}
+
+.mb-3 p {
+  font-size: 16px;
+}

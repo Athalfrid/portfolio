@@ -18,8 +18,9 @@ $(document).ready(function () {
                         <span class="project-toggle">&#9660;</span>
                     </div>
                     <div class="project-details">
+                        <p class="project-description"><i>${project.status ? project.status : ''}</i></p>
                         <p class="project-description">${project.description}</p>
-                        <p class="project-technologies"><strong>Technologies utilisées:</strong> ${project.technologies.join(', ')}</p>
+                        <p class="project-technologies"><strong>Technos utilisées:</strong> ${project.technologies.join(', ')}</p>
                         <div class="project-images">
                             <span class="image-navigation prev">&#9664;</span>
                             <img src="${project.images[0]}" alt="Project Image" class="current-image">
