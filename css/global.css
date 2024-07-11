@@ -3,7 +3,6 @@ body {
   background-color: #4e4e4e; /* Fond gris foncé */
   background-image: url("../img/background/background.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   color: white;
   padding-top: 160px; /* Ajustement pour la navbar fixée */
