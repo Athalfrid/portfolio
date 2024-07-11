@@ -6,6 +6,16 @@
   margin-bottom: 20px;
 }
 
+
+.mb-4 strong {
+  font-size: 20px; /* Réduire la taille de la police pour les titres forts */
+}
+
+.mb-3 p {
+  font-size: 18px; /* Réduire la taille de la police pour les paragraphes */
+  hyphens: auto;
+}
+
 /* Styles pour les smartphones */
 @media (max-width: 576px) {
   .about-me-section {
