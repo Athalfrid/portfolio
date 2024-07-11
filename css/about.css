@@ -6,11 +6,37 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.mb-4 strong {
-  font-size: 20px;
+
+/* Styles pour les smartphones */
+@media (max-width: 576px) {
+  .about-me-section {
+    padding: 20px; /* Réduire le rembourrage pour économiser de l'espace */
+    font-size: 14px; /* Réduire la taille de police générale */
+  }
+
+  .mb-4 strong {
+    font-size: 18px; /* Réduire la taille de la police pour les titres forts */
+  }
+
+  .mb-3 p {
+    font-size: 16px; /* Réduire la taille de la police pour les paragraphes */
+    hyphens: auto;
+  }
 }
 
-.mb-3 p {
-  font-size: 16px;
-  hyphens: auto;
+/* Styles pour les tablettes et écrans plus grands */
+@media (min-width: 577px) and (max-width: 991px) {
+  .about-me-section {
+    padding: 30px; /* Ajuster le rembourrage pour les tablettes */
+    font-size: 16px; /* Taille de police légèrement plus grande */
+  }
+
+  .mb-4 strong {
+    font-size: 20px; /* Taille de police pour les titres forts */
+  }
+
+  .mb-3 p {
+    font-size: 16px; /* Conserver la taille de police pour les paragraphes */
+    hyphens: auto;
+  }
 }

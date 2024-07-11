@@ -20,7 +20,7 @@ $(document).ready(function () {
                     <div class="project-details">
                         <p class="project-description"><i>${project.status ? project.status : ''}</i></p>
                         <p class="project-description">${project.description}</p>
-                        <p class="project-technologies"><strong>Technos utilisées:</strong> ${project.technologies.join(', ')}</p>
+                        <p class="project-technologies"><strong>Technos utilisées:</strong><br> ${project.technologies.join(', ')}</p>
                         <div class="project-images">
                             <span class="image-navigation prev">&#9664;</span>
                             <img src="${project.images[0]}" alt="Project Image" class="current-image">

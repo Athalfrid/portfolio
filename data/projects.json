@@ -1,7 +1,7 @@
 [
   {
     "title": "API Hunt Showdown",
-    "description": "Il s'agit d'une API développée avec ExpressJS avec la base de données NoSQL MongoDB. Elle permet la création, la modification ou la suppression de données des principaux éléments du jeu Hunt Showdown (développé par Crytek). Un système d'inscription/login protège les routes du CRUD.",
+    "description": "Il s'agit d'une API développée avec ExpressJS avec la base de données NoSQL MongoDB. Elle permet la création, la modification ou la suppression de données des principaux éléments du jeu Hunt Showdown (développé par Crytek). Un système d'inscription-login protège les routes du CRUD.",
     "technologies": ["Javascript", "ExpressJS", "MongoDB", "Node.js"],
     "images": ["imageProjects/project1/image1.jpg", "imageProjects/project1/image2.jpg"],
     "status": "En développement",

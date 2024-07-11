@@ -1,49 +1,56 @@
 .skills-section {
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
-    backdrop-filter: blur(5px); /* Effet de flou */
-    border: 1px solid #00ff00; 
-    color: #ecf0f1;
-  }
-  
-  .skill-card {
-    border: 1px solid #34495e;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #7a8ea1;
-    text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
+  backdrop-filter: blur(5px); /* Effet de flou */
+  border: 1px solid #00ff00;
+  color: #ecf0f1;
+}
+
+.skill-card {
+  border: 1px solid #34495e;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #7a8ea1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.skill-icon {
+  width: 90px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.skill-description {
+  font-size: 1rem;
+  color: #ecf0f1;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .skill-card-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill-card {
+    width: 30%; /* Trois compétences par ligne */
     height: 250px;
   }
-  
-  .skill-icon {
-    width: 90px;
+}
+
+@media (max-width: 767px) {
+  .skill-card {
+    width: 100%; /* Une compétence par ligne sur les petits écrans */
     height: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
   }
-  
-  .skill-description {
-    font-size: 1rem;
-    color: #ecf0f1;
-    flex-grow: 1;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .skill-card-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .skill-card {
-      width: 30%; /* Trois compétences par ligne */
-    }
-  }
-  
+}

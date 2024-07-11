@@ -1,48 +1,58 @@
 .form-group {
-    margin-bottom: 20px;
-  }
-  
-  form {
-    background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
   backdrop-filter: blur(5px); /* Effet de flou */
-    padding: 20px;
-    border: 2px solid #00ff00;
-    border-radius: 5px;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #00ff00;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #00ff00;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #00ff00;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00cc00;
+}
+
+/* Styles pour les smartphones */
+@media (max-width: 576px) {
+  form {
+    padding: 10px; /* Réduire le rembourrage pour économiser de l'espace */
   }
-  
-  form label {
-    display: block;
-    margin-bottom: 10px;
-    color: #00ff00;
-  }
-  
+
   form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #00ff00; 
-    background-color: #333333; 
-    color: #ffffff; 
-    font-family: "Courier New", Courier, monospace;
-    outline: none;
+    font-size: 14px; /* Réduire la taille de police pour une meilleure lisibilité */
   }
-  
-  form textarea {
-    resize: none;
-  }
-  
-  form button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #00ff00;
-    color: #000000;
-    font-family: "Courier New", Courier, monospace;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  form button:hover {
-    background-color: #00cc00;
-  }
-  
+}
