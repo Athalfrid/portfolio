@@ -13,6 +13,7 @@
   padding: 20px;
   background-color: #b3b1b1;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 /* Styles pour les écrans de bureau */
@@ -46,6 +47,7 @@
 
   .project-toggle {
     text-align: right; /* Aligner le toggle à droite */
+    font-size: 18px;
   }
   .project-details {
     text-align: justify;

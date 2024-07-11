@@ -36,7 +36,7 @@ $(document).ready(function () {
         projectsContainer.append(projectHtml);
 
         // Gestion de l'événement clic sur .project-header
-        $('.project-header').on('click', function() {
+        $('.project-card').on('click', function() {
             // Sélection du parent .project-card de l'en-tête cliqué
             var projectCard = $(this).closest('.project-card');
             // Sélection des détails du projet spécifique
