@@ -43,7 +43,9 @@
     <div class="container-fluid main-container">
       <main class="container">
         <section class="about-me-section py-4">
-          <h2 class="section-heading text-center pb-4 text-uppercase">À propos de moi</h2>
+          <h2 class="section-heading text-center pb-4 text-uppercase">
+            À propos de moi
+          </h2>
 
           <div class="about-section">
             <div class="mb-4">
@@ -231,5 +233,25 @@
     <script src="js/sendMessage.js"></script>
     <script src="js/loadSkills.js"></script>
     <script src="js/loadProjects.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Gestion du clic sur les liens de navigation interne
+        $('a[href^="#"]').on("click", function (event) {
+          // Empêcher le comportement de défilement par défaut du navigateur
+          event.preventDefault();
+
+          // Récupérer l'identifiant de la section cible à partir de l'attribut href
+          var target = $(this).attr("href");
+
+          // Défilement animé vers la section cible
+          $("html, body").animate(
+            {
+              scrollTop: $(target).offset().top,
+            },
+            1000
+          ); // Durée de l'animation en millisecondes (ici 1000 ms ou 1 seconde)
+        });
+      });
+    </script>
   </body>
 </html>
