@@ -3,7 +3,7 @@
     "title": "API Hunt Showdown",
     "description": "Il s'agit d'une API développée avec ExpressJS avec la base de données NoSQL MongoDB. Elle permet la création, la modification ou la suppression de données des principaux éléments du jeu Hunt Showdown (développé par Crytek). Un système d'inscription-login protège les routes du CRUD.",
     "technologies": ["Javascript", "ExpressJS", "MongoDB", "Node.js"],
-    "images": ["imageProjects/project1/image1.jpg", "imageProjects/project1/image2.jpg"],
+    "others": ["imageProjects/project1/image1.jpg", "imageProjects/project1/image2.jpg"],
     "status": "En développement",
     "github": "https://github.com/Athalfrid/test_api_hunt_showdown"
   },
@@ -11,7 +11,7 @@
     "title": "Application Wiki Hunt Showdown",
     "description": "Il s'agit d'une application web développée avec React afin de visualiser le rendu de l'API que j'ai créée précédemment.",
     "technologies": ["HTML", "CSS", "Bootstrap", "Javascript", "ReactJS"],
-    "images": ["imageProjects/project2/image1.jpg", "imageProjects/project2/image2.jpg"],
+    "others": ["imageProjects/project2/image1.jpg", "imageProjects/project2/image2.jpg"],
     "status": "En développement",
     "github": "https://github.com/Athalfrid/test_api_hunt_react"
   },
@@ -19,7 +19,7 @@
     "title": "What Can I See Tonight",
     "description": "Une application mobile développée avec React Native et Expo. Elle récupère la position GPS de l'utilisateur (après autorisation) afin de lui afficher la visibilité ou non ainsi que la position des planètes dans le ciel. L'utilisateur a la possibilité de rechercher une planète. Un header récupère la position de l'utilisateur et affiche une météo locale.",
     "technologies": ["React Native", "Expo", "Bootstrap"],
-    "images": ["imageProjects/project3/image1.jpg", "imageProjects/project3/image2.jpg"],
+    "others": ["imageProjects/project3/image1.jpg", "imageProjects/project3/image2.jpg"],
     "status": "Fonctionnelle - Développement en pause",
     "github": "https://github.com/Athalfrid/WhatCanISeeTonight"
   },
@@ -27,14 +27,14 @@
     "title": "Projet de formation ENI : ENI Sortir",
     "description": "Une application web développée en groupe de 3 qui permet aux étudiants de l'école d'organiser des sorties entre eux. Les utilisateurs doivent s'inscrire et se connecter afin de pouvoir créer ou s'inscrire à une sortie.",
     "technologies": ["HTML", "CSS", "Javascript", "PHP", "Symfony"],
-    "images": ["imageProjects/project4/image1.jpg", "imageProjects/project4/image2.jpg"],
-    "github": "#"
+    "others": ["imageProjects/project4/image1.jpg", "imageProjects/project4/image2.jpg"],
+    "github": "https://github.com/Manuriq/enisortie"
   },
   {
     "title": "Projet de formation ENI : ENI Enchères",
     "description": "Une application web développée en groupe de 3 qui permet aux étudiants de l'école de mettre en vente des objets ou de poser une enchère sur un ou plusieurs objets. Les utilisateurs doivent s'inscrire et se connecter afin de pouvoir mettre aux enchères un objet ou déposer une enchère sur un produit.",
     "technologies": ["JAVA", "HTML", "CSS", "Javascript"],
-    "images": ["imageProjects/project5/image1.jpg", "imageProjects/project5/image2.jpg"],
-    "github": "#"
+    "others": ["imageProjects/project5/image1.jpg", "imageProjects/project5/image2.jpg"],
+    "github": "https://github.com/Njorgo/Projet-ENI"
   }
 ]
