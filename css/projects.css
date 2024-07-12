@@ -24,6 +24,35 @@
   }
 }
 
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #24292e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+.github-link svg {
+  margin-right: 10px;
+}
+
+.github-link:hover {
+  display: inline-flex;
+  align-items: center;
+  background-color: #24292e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 /* Styles pour les écrans mobiles */
 @media (max-width: 768px) {
   .project-card {
@@ -111,4 +140,7 @@
 .image-navigation {
   cursor: pointer;
   font-size: 1.5rem;
+}
+.project-technologies strong{
+  text-decoration: underline;
 }
