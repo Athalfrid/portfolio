@@ -6,12 +6,12 @@
     },
     {
       "title": "CSS",
-      "description": "Connaissance de base en CSS pour la mise en page et le design des sites web.",
+      "description": "Socle solide en CSS pour la mise en page et le design des sites web.",
       "icon": "img/logo/logoCSS.png"
     },
     {
       "title": "JavaScript",
-      "description": "Introduction à JavaScript pour la programmation interactive sur les pages web.",
+      "description": "Socle solide à JavaScript pour la programmation interactive sur les pages web.",
       "icon": "img/logo/logoJS.png"
     },
     {
@@ -23,6 +23,11 @@
       "title": "ExpressJS",
       "description": "Premiers pas avec ExpressJS pour le développement backend de petites applications web.",
       "icon": "img/logo/logoEXPRESSJS.png"
+    },
+    {
+      "title": "TypeScript",
+      "description": "Base correct dans la création d'application en TypeScript.",
+      "icon": "img/logo/logoTYPESCRIPT.png"
     },
     {
       "title": "PHP",
@@ -43,6 +48,11 @@
       "title": "MongoDB",
       "description": "Introduction à MongoDB pour la gestion de bases de données NoSQL.",
       "icon": "img/logo/logoMONGODB.png"
+    },
+    {
+      "title": "Docker",
+      "description": "Connaissances de base dans la création de container.",
+      "icon": "img/logo/logoDOCKER.png"
     }
   ]
   
